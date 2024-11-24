@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TugasRecyclerView</string>
+
+    <string-array name="taskTitle">
+        <item>Tugas PABA</item>
+        <item>Lari 2 km</item>
+        <item>Jaga Kucing</item>
+        <item>Jaga Anak</item>
+        <item>Squat 2 repetisi</item>
+    </string-array>
+
+    <string-array name="taskDate">
+        <item>12 December 2024</item>
+        <item>11 Oktober 2025</item>
+        <item>12 December 2024</item>
+        <item>11 Oktober 2025</item>
+        <item>12 December 2024</item>
+    </string-array>
+
+    <string-array name="taskDescription">
+        <item>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</item>
+        <item>Neque porro quisquam est qui dolorem ipsum, consectetur, adipisci velit.</item>
+        <item>Neque porro quisqua, consectetur, adipisci velit.</item>
+        <item>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</item>
+        <item>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</item>
+    </string-array>
+
+    <array name="task_images">
+        <item>@drawable/clipboard</item>
+    </array>
+
+    <string-array name="task_status">
+        <item>Waiting for response</item>
+        <item>Waiting for response</item>
+        <item>Waiting for response</item>
+        <item>Waiting for response</item>
+        <item>Waiting for response</item>
+    </string-array>
+</resources>
