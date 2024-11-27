@@ -7,6 +7,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class task(
     var image: Int,
+    var like: Int,
     var date: String,
     var title: String,
     var description: String,

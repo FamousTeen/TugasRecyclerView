@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="185dp"
     android:layout_margin="5dp"
@@ -111,5 +112,16 @@
             android:backgroundTint="#34A853"
             android:text="Start"
             android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/likeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/idIVTaskImage"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-95dp"
+            android:layout_marginBottom="85dp"
+            android:src="@drawable/heart" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

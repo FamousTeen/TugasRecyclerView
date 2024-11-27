@@ -25,6 +25,8 @@ class adapterRecView (private val taskList: ArrayList<task>) : RecyclerView
         fun onItemClicked(data: task, pos: Int)
 
         fun delData(pos: Int)
+
+        fun likeTask(pos: Int)
     }
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
@@ -36,9 +38,11 @@ class adapterRecView (private val taskList: ArrayList<task>) : RecyclerView
         var _taskDate = itemView.findViewById<TextView>(R.id.idTVTaskDate)
         var _taskDesc = itemView.findViewById<TextView>(R.id.idTVTaskDescription)
         var _taskStatusImage = itemView.findViewById<ImageView>(R.id.idIVTaskImage)
+        var _taskLikeButton = itemView.findViewById<ImageView>(R.id.likeBtn)
         var _deleteBtn = itemView.findViewById<Button>(R.id.deletebtn)
         var _editBtn = itemView.findViewById<Button>(R.id.editbtn)
         var _startOrStopBtn = itemView.findViewById<Button>(R.id.startorstopbtn)
+        var _likeBtn = itemView.findViewById<ImageView>(R.id.likeBtn)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -57,6 +61,7 @@ class adapterRecView (private val taskList: ArrayList<task>) : RecyclerView
         holder._taskDate.text = task.date
         holder._taskDesc.text = task.description
         holder._taskStatusImage.setImageResource(task.image)
+        holder._taskLikeButton.setImageResource(task.like)
 
         holder._editBtn.setOnClickListener {
             onItemClickCallback.onItemClicked(task, position)
@@ -64,6 +69,11 @@ class adapterRecView (private val taskList: ArrayList<task>) : RecyclerView
 
         holder._deleteBtn.setOnClickListener {
             onItemClickCallback.delData(position)
+        }
+
+        holder._likeBtn.setOnClickListener {
+            onItemClickCallback.likeTask(position)
+            holder._taskLikeButton.setImageResource(R.drawable.heart2)
         }
 
         holder._startOrStopBtn.setOnClickListener {

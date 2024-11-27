@@ -29,6 +29,11 @@
         <item>@drawable/clipboard</item>
     </array>
 
+    <array name="task_likes">
+        <item>@drawable/heart</item>
+        <item>@drawable/heart2</item>
+    </array>
+
     <string-array name="task_status">
         <item>Waiting for response</item>
         <item>Waiting for response</item>
